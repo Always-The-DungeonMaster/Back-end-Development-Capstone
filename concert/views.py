@@ -36,7 +36,7 @@ def index(request):
 
 
 def songs(request):
-    songs = req.get("http://songs-sn-labs-ericgustavjo.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud/song").json()
+    songs = req.get("http://songs-sn-labs-ericgustavjo.labs-prod-openshift-san-a45631dc5778dc6371c67d206ba9ae5c-0000.us-east.containers.appdomain.cloud/songs").json()
     return render(request, "songs.html", {"songs":songs["songs"]})
     
 
